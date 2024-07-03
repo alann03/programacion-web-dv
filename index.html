@@ -14,13 +14,13 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
     rel="stylesheet" />
+  <script src="script.js"></script>
 </head>
 
 <body>
   <header class="main-header">
-    <div class="menu-icon-container">
-      <a href=""><img src="assets/svg/menu.svg" alt="Menu" class="menu-icon" /></a>
-    </div>
+    <button class="menu-icon-container" onclick="toggleMenu()"><img src="assets/svg/menu.svg" alt="Menu"
+        class="menu-icon" /></button>
     <img src="assets/svg/logo.svg" alt="logo" class="logo-header" />
     <nav class="main-nav">
       <ul>
@@ -34,6 +34,17 @@
       <a href="login.html"><img src="assets/svg/profile.svg" alt="Perfil" class="profile-icon" /></a>
     </div>
   </header>
+  <nav class="mobile-menu" id="mobile-menu">
+    <button onclick="toggleMenu()">
+      <img src="assets/svg/cross.svg" alt="cross" class="cross-menu" />
+    </button>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="#shop">Tienda</a></li>
+      <li><a href="#contact">Contacto</a></li>
+      <li><a href="#about">Sobre Nosotros</a></li>
+    </ul>
+  </nav>
   <section class="landing" id="landing">
     <div class="landing-texts-container">
       <div>

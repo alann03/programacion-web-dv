@@ -16,16 +16,22 @@ const selectNavLink = () => {
   const currentUrl = window.location.href;
   const navLinks = document.querySelectorAll(".main-nav a, .mobile-menu a");
 
+  let activeLinkFound = false;
+
   navLinks.forEach((link) => {
     if (currentUrl.endsWith(link.href)) {
       link.classList.add("active");
+      activeLinkFound = true;
     }
     link.addEventListener("click", function () {
       navLinks.forEach((navLink) => navLink.classList.remove("active"));
       link.classList.add("active");
-      mobileMenu.style.display = "none";
     });
   });
+
+  if (!activeLinkFound) {
+    navLinks[0].classList.add("active");
+  }
 };
 
 document.addEventListener("DOMContentLoaded", selectNavLink);

@@ -29,7 +29,7 @@ const selectNavLink = () => {
     });
   });
 
-  if (!activeLinkFound) {
+  if (!activeLinkFound && !currentUrl.includes('login') && !currentUrl.includes('register')) {
     navLinks[0].classList.add("active");
   }
 };

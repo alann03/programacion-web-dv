@@ -132,13 +132,18 @@
     border-bottom: 2px solid #fca311;
   }
 
-  .cross-menu {
+  .cross-menu-container {
     position: absolute;
     top: 15px;
     right: 15px;
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+
+  .cross-menu {
     width: 28px;
     height: 28px;
-    cursor: pointer;
   }
 
   .cross-menu:hover {

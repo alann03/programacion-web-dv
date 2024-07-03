@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coral Accesorios</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="menu-icon-container">
+      <a href=""><img src="assets/svg/menu.svg" alt="Menu" class="menu-icon" /></a>
+    </div>
+    <img src="assets/svg/logo.svg" alt="logo" class="logo-header" />
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#shop">Tienda</a></li>
+        <li><a href="#contact">Contacto</a></li>
+        <li><a href="#about">Sobre Nosotros</a></li>
+      </ul>
+    </nav>
+    <div>
+      <a href="login.html"><img src="assets/svg/profile.svg" alt="Perfil" class="profile-icon" /></a>
+    </div>
+  </header>
+  <section class="register-section">
+    <h2>Registrar cuenta</h2>
+    <form class="register-form">
+      <div class="form-group-row">
+        <div class="form-group">
+          <label for="username">
+            Nombre
+          </label>
+          <input type="text" required>
+        </div>
+        <div class="form-group">
+          <label for="lastname">
+            Apellido
+          </label>
+          <input type="text" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">
+          Correo electrónico
+        </label>
+        <input type="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">
+          Contraseña nueva
+        </label>
+        <input type="password" required>
+      </div>
+      <div class="form-group">
+        <label for="date">
+          Fecha de nacimiento
+        </label>
+        <input type="date" required>
+      </div>
+      <div class="form-group">
+        <label for="gender">
+          Sexo
+        </label>
+        <select class="" required>
+          <option value="" disabled selected>Seleccione una opción</option>
+          <option value="hombre">Hombre</option>
+          <option value="mujer">Mujer</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+      <button class="form-btn login-button" type="submit">Registrate</button>
+    </form>
+  </section>
+</body>
+
+</html>

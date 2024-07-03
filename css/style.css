@@ -40,6 +40,10 @@
   font-family: "Playfair Display SC", serif;
 }
 
+.profile-icon-container {
+  display: block;
+}
+
 .profile-icon {
   width: 28px;
   height: 28px;
@@ -135,7 +139,7 @@
 }
 
 .button-primary:hover {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .button-secondary {
@@ -144,7 +148,7 @@
 }
 
 .button-secondary:hover {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 @media (max-width: 800px) {
@@ -396,6 +400,10 @@
   background-color: #293241;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
+}
+
+.register-button:hover {
+  background-color: #323e53;
 }
 
 @media (max-width: 500px) {

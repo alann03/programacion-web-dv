@@ -721,6 +721,54 @@
   color: #aaa;
 }
 
+@media (max-width: 700px) {
+  .footer-logo {
+    height: 42px;
+    width: 135px;
+  }
+
+  .footer-links li a {
+    font-size: 14px;
+  }
+
+  .footer-text {
+    font-size: 15px;
+  }
+
+  .footer-social img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .footer-rights {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 500px) {
+   .footer-logo {
+    height: 40px;
+    width: 125px;
+  }
+
+  .footer-links li a {
+    font-size: 12px;
+  }
+
+  .footer-text {
+    font-size: 13px;
+  }
+
+  .footer-social img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .footer-rights {
+    font-size: 11px;
+  }
+}
+
 /* SHOP / MAINTENENCE */
 
 .shop-section {

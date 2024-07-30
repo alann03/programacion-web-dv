@@ -309,6 +309,23 @@
   font-weight: bold;
 }
 
+.product-card button {
+  background-color: #fca311;
+  color: #fff;
+  padding: 12px 0px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 8px;
+}
+
+.product-card button:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 700px) {
   .home-products-section {
     padding: 70px 20px;
@@ -357,6 +374,10 @@
   .product-card-price {
     font-size: 16px;
     font-weight: bold;
+  }
+
+  .product-card button {
+    font-size: 12px;
   }
 }
 
@@ -635,5 +656,123 @@
 
   .register-form {
     padding: 25px;
+  }
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);
+  font-family: "Playfair Display", serif;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+  height: 48px;
+  width: 140px;
+}
+
+.footer-links {
+  list-style: none;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+
+.footer-links li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+}
+
+.footer-links li a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer-text {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin: 0px 5px;
+}
+
+.footer-social img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-social img:hover {
+  transform: scale(1.1);
+}
+
+.footer-rights {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* SHOP / MAINTENENCE */
+
+.shop-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/assets/img/background-CA.png');
+  background-size: cover;
+}
+
+.shop-header {
+  background-color: #fff;
+}
+
+.maintenance-modal {
+  text-align: center;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Playfair Display", serif;
+  margin: 0px 10px;
+}
+
+.maintenance-modal img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.maintenance-modal h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.maintenance-modal p {
+  font-size: 16px;
+  color: #666;
+}
+
+@media (max-width: 500px) {
+  .maintenance-modal img {
+  width: 80px;
+  height: 80px;
+  }
+
+  .maintenance-modal h1 {
+    font-size: 20px;
+  }
+
+  .maintenance-modal p {
+    font-size: 14px;
   }
 }

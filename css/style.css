@@ -259,7 +259,7 @@
 .section-title {
   font-family: "Playfair Display", serif;
   color: #818487;
-  font-size: 38px;
+  font-size: 36px;
   text-align: center;
 }
 
@@ -895,5 +895,306 @@
   .info-box {
     font-size: 13px;
     padding: 14px
+  }
+}
+
+/* ABOUT */
+
+.about-description-section {
+  margin-top: 45px;
+  padding: 50px 70px;
+  font-family: "Playfair Display", serif;
+}
+
+.about-description-section h2 {
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-description-section p {
+  font-size: 17px;
+  margin: 6px 0px;
+}
+
+.about-location-section {
+  padding: 60px 70px;
+  font-family: "Playfair Display", serif;
+  background-color: #818487;
+}
+
+.about-location-section h2 {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.store-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.map {
+  border-radius: 20px;
+}
+
+@media (max-width: 850px) {
+  .map {
+    width: 400px;
+  }
+}
+
+.hours {
+  background-color: #fff;
+  height: fit-content;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.hours h3 {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+
+.hours p {
+  font-size: 16px;
+  margin: 4px 0px;
+}
+
+.shipping-info {
+	padding: 30px 0;
+}
+
+.shipping-info-title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	font-family: "Playfair Display", serif;
+	gap: 10px;
+	margin: 0 0 10px 0;
+}
+
+.shipping-info img {
+  width: 45px;
+}
+
+.locations {
+	font-family: "Playfair Display", serif;
+	font-size: 17px;
+	text-align: center;
+	margin: 0 0 0 0;
+}
+
+@media screen and (max-width: 768px) {
+		.shipping-info {
+      padding: 25px 0;
+    }
+
+		.shipping-info img {
+			width: 40px;
+		}
+
+		.shipping-info-title {
+			font-size: 16px;
+		}
+
+		.locations {
+			font-size: 14px;
+		}
+	}
+
+	@media screen and (max-width: 550px) {
+    .shipping-info {
+      padding: 22px 0;
+    }
+    
+		.shipping-info-title {
+			font-size: 13px;
+		}
+
+    .shipping-info img {
+			width: 35px;
+		}
+
+		.locations {
+			font-size: 12px;
+		}
+	}
+
+.about-gallery-section {
+  background-color: #818487;
+  padding: 60px 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Playfair Display", serif;
+}
+
+.about-gallery-section h2 {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+
+.gallery-item {
+  padding: 6px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.gallery-item img {
+  max-width: 100%;
+  display: block;
+  border-radius: 5px;
+  width: 250px;
+  height: 250px;
+}
+
+@media (max-width: 1350px) {
+  .gallery {
+    width: 90%;
+  }
+}
+
+@media (max-width: 760px) {
+  .gallery {
+    width: 100%;
+  }
+
+  .gallery-item img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.about-gallery-section button {
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 24px;
+  padding: 10px 30px;
+  text-align: center;
+  background-color: #fca311;
+}
+
+.about-gallery-section button:hover {
+  background-color: #fbab2a;
+}
+
+@media (max-width: 700px) {
+  .about-description-section {
+    padding: 70px 20px;
+  }
+
+  .about-description-section h2 {
+    font-size: 26px;
+  }
+  .about-description-section p {
+    font-size: 15px;
+  }
+
+  .about-location-section {
+    padding: 70px 20px;
+  }
+
+  .about-location-section h2 {
+    font-size: 22px;
+  }
+
+  .hours {
+    padding: 15px;
+  }
+
+  .hours h3 {
+    font-size: 18px;
+  }
+
+  .hours p {
+    font-size: 16px;
+  }
+
+  .about-gallery-section {
+    padding: 70px 20px;
+  }
+
+  .about-gallery-section h2 {
+    font-size: 22px;
+  }
+
+  .about-gallery-section button {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-description-section {
+    padding: 50px 20px;
+  }
+
+  .about-description-section h2 {
+    font-size: 20px;
+  }
+
+  .about-description-section p {
+    font-size: 13px;
+  }
+
+  .map {
+    width: 280px;
+    height: 400px;
+  }
+
+  .about-location-section {
+    padding: 50px 20px;
+  }
+
+  .about-location-section h2 {
+    font-size: 20px;
+  }
+
+  .hours {
+    padding: 15px;
+  }
+
+  .hours h3 {
+    font-size: 16px;
+  }
+
+  .hours p {
+    font-size: 14px;
+  }
+
+  .about-gallery-section {
+    padding: 50px 20px;
+  }
+
+  .about-gallery-section h2 {
+    font-size: 20px;
+  }
+
+  .about-gallery-section button {
+    font-size: 13px;
+    padding: 8px 20px;
   }
 }

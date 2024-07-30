@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <header class="main-header shop-header">
+  <header class="main-header">
     <button class="menu-icon-container" onclick="toggleMenu()"><img src="assets/svg/menu.svg" alt="Menu"
         class="menu-icon" /></button>
     <img src="assets/svg/logo.svg" alt="logo" class="logo-header" />
@@ -45,12 +45,30 @@
       <li><a href="about.html">Sobre Nosotros</a></li>
     </ul>
   </nav>
-  <section class="shop-section">
-  <div class="maintenance-modal">
-    <img src="https://img.icons8.com/ios-filled/100/000000/maintenance.png" alt="Mantenimiento">
-    <h1>Tienda actualmente en mantenimiento</h1>
-    <p>Estamos trabajando para mejorar tu experiencia. Por favor, vuelve más tarde. Gracias por tu paciencia.</p>
-  </div>
+  <section class="contact-section">
+    <h1>Contactate con nosotros</h1>
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="info-box">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/map-pin.png" alt="Pin">
+          <p>Av. Calle Falsa 1234</p>
+        </div>
+        <div class="info-box">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png" alt="Phone">
+          <p>+54 9 (011) 0000-000</p>
+        </div>
+        <div class="info-box">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/mail.png" alt="Mail">
+          <p>coral@example.com</p>
+        </div>
+      </div>
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
   </section>
 
 </body>
